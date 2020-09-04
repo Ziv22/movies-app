@@ -1,0 +1,27 @@
+movies app- 
+
+#Model- 
+	# An array that stores objects of all current (searched) movies
+	# An array of favorite movies 
+		# storing favorties in local storage 
+	
+#View-  
+	# List of all th results. 
+	# No results message
+	# Specific movie view 
+	# Favorites view
+	# Design for favorite movies
+	# Overlay summary in the list view, limited to specific amoun of chars
+	# Modal - the movie was saved to favorites
+
+#Controller- 
+	# Recieve user input
+	# Search for movies according to user's input
+	# Retrivieing data from OMDB 
+	# Mapping the data 
+	# Verification that the movie exists
+	# Marking a movie as favorite
+	# Removing a movie from favorites
+	# Verification that the movie diesn't exist
+	# Saving favorites to local storage 
+	# 
