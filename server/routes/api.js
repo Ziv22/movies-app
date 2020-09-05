@@ -6,9 +6,13 @@ router.get("/movies/:movie", function(req,res){
     const movieName = encodeURIComponent(req.params.movie)
     const url = `http://www.omdbapi.com/?s=${movieName}}&plot=full&apikey=14b0dd81`
 
-    urllib.request(url, function (err, data) {       
-        const modifiedData = JSON.parse(data).Search
-        res.send(modifiedData)
+    urllib.request(url, function (err, data) {
+        const modifiedData = JSON.parse(data)
+        if(modifiedData.Response == "True"){
+            res.send(modifiedData.Search)
+        } else {
+            res.send({err: "Movie Not Found"})
+        }
     });
         
 })

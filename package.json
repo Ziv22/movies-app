@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Ziv22/movies-app#readme",
   "dependencies": {
+    "browser-sync": "^2.26.12",
     "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
     "handlebars": "^4.7.6",
     "jquery": "^3.5.1",
     "urllib": "^2.36.1"
